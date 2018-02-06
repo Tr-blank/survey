@@ -85,96 +85,96 @@ var dataJson = [
           title: 'Acne/​Breakouts',
           value: 'Acne/​Breakouts',
           name: 'qusetion1',
-          imgFrontSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/acne.png',
-          imgBackSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/acneWhite.png'
+          imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/acne.png',
+          imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/acneWhite.png'
         },
         {
           optionId: 'option-2',
           title: 'Daily Care',
           value: 'Daily Care',
           name: 'qusetion2',
-          imgFrontSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/dailyCare.png',
-          imgBackSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/dailyCareWhite.png'
+          imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/dailyCare.png',
+          imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/dailyCareWhite.png'
         },
         {
           optionId: 'option-3',
           title: 'Dark Spots/Uneven Skin Tone',
           value: 'Dark Spots/Uneven Skin Tone',
           name: 'qusetion3',
-          imgFrontSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/darkSpots.png',
-          imgBackSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/darkSpotsWhite.png'
+          imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/darkSpots.png',
+          imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/darkSpotsWhite.png'
         },
         {
           optionId: 'option-4',
           title: 'Dryness',
           value: 'Dryness',
           name: 'qusetion3',
-          imgFrontSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/dryness.png',
-          imgBackSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/drynessWhite.png'
+          imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/dryness.png',
+          imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/drynessWhite.png'
         },
         {
           optionId: 'option-5',
           title: 'Eye Area',
           value: 'Eye Area',
           name: 'qusetion5',
-          imgFrontSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/eyeArea.png',
-          imgBackSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/eyeAreaWhite.png'
+          imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/eyeArea.png',
+          imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/eyeAreaWhite.png'
         },
         {
           optionId: 'option-6',
           title: 'Firming/​Lifting',
           value: 'Firming/​Lifting',
           name: 'qusetion6',
-          imgFrontSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/lifting.png',
-          imgBackSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/liftingWhite.png'
+          imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/lifting.png',
+          imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/liftingWhite.png'
         },
         {
           optionId: 'option-7',
           title: 'Lines/​Wrinkles',
           value: 'Lines/​Wrinkles',
           name: 'qusetion7',
-          imgFrontSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/lines.png',
-          imgBackSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/linesWhite.png'
+          imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/lines.png',
+          imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/linesWhite.png'
         },
         {
           optionId: 'option-8',
           title: 'Pores',
           value: 'Pores',
           name: 'qusetion8',
-          imgFrontSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/pores.png',
-          imgBackSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/poresWhite.png'
+          imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/pores.png',
+          imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/poresWhite.png'
         },
         {
           optionId: 'option-9',
           title: 'Radiance',
           value: 'Radiance',
           name: 'qusetion8',
-          imgFrontSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/radiance.png',
-          imgBackSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/radianceWhite.png'
+          imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/radiance.png',
+          imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/radianceWhite.png'
         },
         {
           optionId: 'option-10',
           title: 'Redness',
           value: 'Redness',
           name: 'qusetion8',
-          imgFrontSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/redness.png',
-          imgBackSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/rednessWhite.png'
+          imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/redness.png',
+          imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/rednessWhite.png'
         },
         {
           optionId: 'option-11',
           title: 'Sensitivity',
           value: 'Sensitivity',
           name: 'qusetion8',
-          imgFrontSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/sensitivity.png',
-          imgBackSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/sensitivityWhite.png'
+          imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/sensitivity.png',
+          imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/sensitivityWhite.png'
         },
         {
           optionId: 'option-12',
           title: 'Sun Protection',
           value: 'Sun Protection',
           name: 'qusetion8',
-          imgFrontSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/sun.png',
-          imgBackSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/sunWhite.png'
+          imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/sun.png',
+          imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/sunWhite.png'
         }
       ]
     }
@@ -295,16 +295,16 @@ var dataJson = [
         title: 'Walking around',
         value: 'Walking around',
         name: 'qusetion',
-        imgFrontSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/face.png',
-        imgBackSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/face.png'
+        imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/face.png',
+        imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/face.png'
         },
         {
         optionId: 'option-2',
         title: 'Many hours spent outdoors',
         value: 'Many hours spent outdoors',
         name: 'qusetion',
-        imgFrontSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/face-men-transparent.png',
-        imgBackSrc: 'https: //www.clinique.com/lcl/blue_ocean/quiz/images/face-men-transparent.png'
+        imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/face-men-transparent.png',
+        imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/face-men-transparent.png'
         }
       ]
     }
@@ -328,19 +328,19 @@ var dataJson = [
       options: [
         {
         title: 'Deep',
-        imgSrc: 'https: //www.clinique.com/media/images/foundation-finder/D7.jpg'
+        imgSrc: 'https://www.clinique.com/media/images/foundation-finder/D7.jpg'
         },
         {
         title: 'Medium',
-        imgSrc: 'https: //www.clinique.com/media/images/foundation-finder/D3.jpg'
+        imgSrc: 'https://www.clinique.com/media/images/foundation-finder/D3.jpg'
         },
         {
         title: 'Moderately Fair',
-        imgSrc: 'https: //www.clinique.com/media/images/foundation-finder/M3.jpg'
+        imgSrc: 'https://www.clinique.com/media/images/foundation-finder/M3.jpg'
         },
         {
         title: 'Very Fair',
-        imgSrc: 'https: //www.clinique.com/media/images/foundation-finder/VF4.jpg'
+        imgSrc: 'https://www.clinique.com/media/images/foundation-finder/VF4.jpg'
         }
       ]
     }
