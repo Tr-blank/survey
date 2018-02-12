@@ -1,82 +1,88 @@
 var dataJson = [
   {
-    number: 0,
-    title: 'Welcome to Clinique',
-    question: 'How can we help you today?',
-    model: 'model01',
-    nextNumber: 1,
-    wordColor: {
+    number: 0,//問題編號
+    title: 'Welcome to Clinique',//問題大標
+    question: 'How can we help you today?',//問題小標
+    model: 'model01',//使用模板編號，必填，model01、model02、model03
+    necessary:true,//是否必填
+    nextNumber: 1,//下個問題標號
+    answered:false,//是否回答，預設都是false，過程計算用不須變動
+    totalAnswer: 5,//總共必填題數，如是依回答答案決定題目順序的題型，必填總題數會比necessary:true的題目數量來的少
+    wordColor: {//問題小標文字顏色
       'color': '#409238'
     },
-    bgstyle: {
+    bgstyle: {//背景底色
       backgroundColor: '#f0f0f0'
     },
-    modelOption: {
+    barBgColor: '#fff',//下方進度條底色
+    barColor:'#5aa051',//下方進度條顏色
+    barWordColor:'#FFC107',//下方進度條文字顏色
+    modelOption: {//此問題的答案選項共通設定
       multiLine: 'flex-wrap:wrap;', //多行顯示要填入flex-wrap:wrap;
-      oneLine: true,
-      bigPic: false, //大圖模式要填入pic-title
-      maxChoose: 1,
-      answer: [],
-      optionsFroundcolor: {
-        backgroundColor: '',
-        backgroundImage: 'linear-gradient(#696969, #949494)', 
-        color: '#fff'
+      oneLine: true,//是不是只有一行顯示
+      bigPic: false, //如果是大圖模式就填true
+      maxChoose: 1,//多選最大可選數量
+      answer: [],//暫存此答案的參數，不須變動
+      optionsFroundcolor: {//答案選項顏色設定
+        backgroundColor: '',//選項底色
+        backgroundImage: 'linear-gradient(#696969, #949494)',//可填圖片或是漸層色
+        color: '#fff'//選項文字顏色
       },
-      optionsBackcolor: {
+      optionsBackcolor: {//答案選項選取翻轉後顏色，設定同上
         backgroundColor: '',
         backgroundImage: 'linear-gradient(#408d38,#60a557)',
         color: '#fff'
       },
-      options: [
+      options: [//答案選項其他設定，樣式部分為特定選項想要另特別的顏色才填入
         {
-        optionId: 'option-1',
-        title: 'Clinique For Women',
-        value: 'Women',
-        name: 'qusetion',
-        bgColor:'',
-        bgColorTop: '#408d38',
-        bgColorBottom: '#60a557',
-        color: '#fff',
-        imgSrc: ''
+          optionId: 'option-1',//答案選項編號
+          title: 'Clinique For Women',//畫面上顯示的答案文字
+          value: 'Women',//答案陣列紀錄的文字
+          imgFrontSrc: '',//正面圖片路徑
+          imgBackSrc: ''//選取翻轉後的圖片路徑
         },
         {
-        optionId: 'option-2',
-        title: 'Clinique For Men',
-        value: 'Men',
-        name: 'qusetion',
-        bgColor: '',
-        bgColorTop: '#696969',
-        bgColorBottom: '#949494',
-        color: '#fff',
-        imgSrc: ''
+          optionId: 'option-2',
+          title: 'Clinique For Men',
+          value: 'Men',
+          imgFrontSrc: '',
+          imgBackSrc: ''
         }
       ]
     }
   },
   {
-      number: 1,
-      title: 'What brings you to Clinique today?',
-      question: 'Tap to select up to 2 skin concerns.',
-      model: 'model01',
-      nextNumber: 2,
-      wordColor: {
-        'color': '#409238'
+    number: 1,
+    title: 'What brings you to Clinique today?',
+    question: 'Tap to select up to 2 skin concerns.',
+    model: 'model01',
+    necessary: true,
+    nextNumber: 2,
+    answered: false,
+    totalAnswer: 5,//總共必填題數
+    wordColor: {
+      'color': '#409238'
     },
-      bgstyle: {
-        'background-color': '#f6f6f6'
+    bgstyle: {
+      'background-color': '#f6f6f6'
     },
-      modelOption: {
-        multiLine: 'flex-wrap:wrap;', //多行顯示要填入flex-wrap:wrap;
-        oneLine: false,
-        bigPic: false, //大圖模式要填入pic-title
-        maxChoose: 2,
-        answer: [],
-        optionsFroundcolor: {
-          backgroundColor: '#fff',
-          color: '#666'
+    barBgColor:'#fff',
+    barColor:'#5aa051',
+    barWordColor:'#FFC107',
+    modelOption: {
+      multiLine: 'flex-wrap:wrap;', //多行顯示要填入flex-wrap:wrap;
+      oneLine: false,
+      bigPic: false, 
+      maxChoose: 2,
+      answer: [],
+      optionsFroundcolor: {
+        backgroundColor: '#fff',
+        backgroundImage:'',
+        color: '#666'
       },
         optionsBackcolor: {
           backgroundColor: '#409238',
+          backgroundImage: '',
           color: '#fff'
       },
         options: [
@@ -84,7 +90,6 @@ var dataJson = [
           optionId: 'option-1',
           title: 'Acne/​Breakouts',
           value: 'Acne/​Breakouts',
-          name: 'qusetion1',
           imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/acne.png',
           imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/acneWhite.png'
         },
@@ -92,7 +97,6 @@ var dataJson = [
           optionId: 'option-2',
           title: 'Daily Care',
           value: 'Daily Care',
-          name: 'qusetion2',
           imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/dailyCare.png',
           imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/dailyCareWhite.png'
         },
@@ -100,7 +104,6 @@ var dataJson = [
           optionId: 'option-3',
           title: 'Dark Spots/Uneven Skin Tone',
           value: 'Dark Spots/Uneven Skin Tone',
-          name: 'qusetion3',
           imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/darkSpots.png',
           imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/darkSpotsWhite.png'
         },
@@ -108,7 +111,6 @@ var dataJson = [
           optionId: 'option-4',
           title: 'Dryness',
           value: 'Dryness',
-          name: 'qusetion3',
           imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/dryness.png',
           imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/drynessWhite.png'
         },
@@ -116,7 +118,6 @@ var dataJson = [
           optionId: 'option-5',
           title: 'Eye Area',
           value: 'Eye Area',
-          name: 'qusetion5',
           imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/eyeArea.png',
           imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/eyeAreaWhite.png'
         },
@@ -124,7 +125,6 @@ var dataJson = [
           optionId: 'option-6',
           title: 'Firming/​Lifting',
           value: 'Firming/​Lifting',
-          name: 'qusetion6',
           imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/lifting.png',
           imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/liftingWhite.png'
         },
@@ -132,7 +132,6 @@ var dataJson = [
           optionId: 'option-7',
           title: 'Lines/​Wrinkles',
           value: 'Lines/​Wrinkles',
-          name: 'qusetion7',
           imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/lines.png',
           imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/linesWhite.png'
         },
@@ -140,7 +139,6 @@ var dataJson = [
           optionId: 'option-8',
           title: 'Pores',
           value: 'Pores',
-          name: 'qusetion8',
           imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/pores.png',
           imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/poresWhite.png'
         },
@@ -148,7 +146,6 @@ var dataJson = [
           optionId: 'option-9',
           title: 'Radiance',
           value: 'Radiance',
-          name: 'qusetion8',
           imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/radiance.png',
           imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/radianceWhite.png'
         },
@@ -156,7 +153,6 @@ var dataJson = [
           optionId: 'option-10',
           title: 'Redness',
           value: 'Redness',
-          name: 'qusetion8',
           imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/redness.png',
           imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/rednessWhite.png'
         },
@@ -164,7 +160,6 @@ var dataJson = [
           optionId: 'option-11',
           title: 'Sensitivity',
           value: 'Sensitivity',
-          name: 'qusetion8',
           imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/sensitivity.png',
           imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/sensitivityWhite.png'
         },
@@ -172,7 +167,6 @@ var dataJson = [
           optionId: 'option-12',
           title: 'Sun Protection',
           value: 'Sun Protection',
-          name: 'qusetion8',
           imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/sun.png',
           imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/sunWhite.png'
         }
@@ -185,25 +179,33 @@ var dataJson = [
     question: '',
     answer: '',
     model: 'model01',
+    necessary: false,
     nextNumber: 3,
+    answered: false,
+    totalAnswer: 5,
     wordColor: {
       'color':'#409238'
     },
     bgstyle: {
       'background-color': '#f6f6f6'
     },
+    barBgColor:'#fff',
+    barColor:'#5aa051',
+    barWordColor:'#FFC107',
     modelOption: {
-      multiLine: '', //多行顯示要填入flex-wrap:wrap;
+      multiLine: '',
       oneLine: true,
-      bigPic: false, //大圖模式要填入pic-title
+      bigPic: false, 
       maxChoose: 1,
       answer: [],
       optionsFroundcolor: {
         backgroundColor: '#fff',
+        backgroundImage: '',
         color: '#666'
       },
       optionsBackcolor: {
         backgroundColor: '#409238',
+        backgroundImage: '',
         color: '#fff'
       },
       options: [
@@ -211,36 +213,36 @@ var dataJson = [
         optionId: 'option-1',
         title: '0-18',
         value: '0-18',
-        name: 'qusetion',
-        imgFrontSrc:''
+        imgFrontSrc:'',
+         imgBackSrc:''
         },
         {
         optionId: 'option-2',
         title: '19-29',
         value: '19-29',
-        name: 'qusetion',
-        imgFrontSrc:''
+        imgFrontSrc:'',
+         imgBackSrc:''
         },
         {
         optionId: 'option-3',
         title: '20-49',
         value: '20-49',
-        name: 'qusetion',
-        imgFrontSrc:''
+        imgFrontSrc:'',
+         imgBackSrc:''
         },
         {
         optionId: 'option-4',
         title: '50-69',
         value: '50-69',
-        name: 'qusetion',
-        imgFrontSrc:''
+        imgFrontSrc:'',
+         imgBackSrc:''
         },
         {
         optionId: 'option-5',
         title: '70+',
         value: '70+',
-        name: 'qusetion',
-        imgFrontSrc:''
+        imgFrontSrc:'',
+         imgBackSrc:''
         }
       ]
     }
@@ -250,13 +252,19 @@ var dataJson = [
     title: 'How many hours do you sleep on average?',
     question: "We ask because poor sleep can affect skin's well - being.",
     model: 'model02',
+    necessary: true,
     nextNumber: 4,
+    answered: false,
+    totalAnswer: 5,
     wordColor: {
       'color':'#409238'
     },
     bgstyle: {
       'background-color': '#f6f6f6'
     },
+    barBgColor:'#fff',
+    barColor:'#5aa051',
+    barWordColor:'#FFC107',
     modelOption: {
       answer: []
     }
@@ -266,17 +274,23 @@ var dataJson = [
     title: 'What kind of sun exposure do you get on an average day?',
     question: '',
     model: 'model01',
+    necessary: true,
     nextNumber: 5,
+    answered: false,
+    totalAnswer: 5,
     wordColor: {
       'color':'#409238'
     },
     bgstyle: {
       'background-color': '#f6f6f6'
     },
+    barBgColor:'#fff',
+    barColor:'#5aa051',
+    barWordColor:'#FFC107',
     modelOption: {
-      multiLine: '', //多行顯示要填入flex-wrap:wrap;
+      multiLine: '',
       oneLine: true,
-      bigPic: true, //大圖模式要填入pic-title
+      bigPic: true, 
       maxChoose: 1,
       answer: [],
       optionsFroundcolor: {
@@ -294,7 +308,6 @@ var dataJson = [
         optionId: 'option-1',
         title: 'Walking around',
         value: 'Walking around',
-        name: 'qusetion',
         imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/face.png',
         imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/face.png'
         },
@@ -302,7 +315,6 @@ var dataJson = [
         optionId: 'option-2',
         title: 'Many hours spent outdoors',
         value: 'Many hours spent outdoors',
-        name: 'qusetion',
         imgFrontSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/face-men-transparent.png',
         imgBackSrc: 'https://www.clinique.com/lcl/blue_ocean/quiz/images/face-men-transparent.png'
         }
@@ -314,33 +326,39 @@ var dataJson = [
     title: 'Which skin tone is closest to yours?',
     question: '',
     model: 'model03',
+    necessary: true,
     nextNumber: 0,
+    answered: false,
+    totalAnswer: 5,
     wordColor: {
       'color':'#409238'
     },
     bgstyle: {
       'background-color': '#f6f6f6'
     },
+    barBgColor:'#fff',
+    barColor:'#5aa051',
+    barWordColor:'#FFC107',
     modelOption: {
       answer: [],
-      rangeBgColorLeft: '#865649',
-      rangeBgColorRight: '#f4e2d3',
+      rangeBgColorLeft: '#865649',//拉條漸層底色左邊色碼
+      rangeBgColorRight: '#f4e2d3',//拉條漸層底色右邊色碼
       options: [
         {
-        title: 'Deep',
-        imgSrc: 'https://www.clinique.com/media/images/foundation-finder/D7.jpg'
+          title: 'Deep',//選項名稱
+          imgSrc: 'https://www.clinique.com/media/images/foundation-finder/D7.jpg'//選項對應圖片
         },
         {
-        title: 'Medium',
-        imgSrc: 'https://www.clinique.com/media/images/foundation-finder/D3.jpg'
+          title: 'Medium',
+          imgSrc: 'https://www.clinique.com/media/images/foundation-finder/D3.jpg'
         },
         {
-        title: 'Moderately Fair',
-        imgSrc: 'https://www.clinique.com/media/images/foundation-finder/M3.jpg'
+          title: 'Moderately Fair',
+          imgSrc: 'https://www.clinique.com/media/images/foundation-finder/M3.jpg'
         },
         {
-        title: 'Very Fair',
-        imgSrc: 'https://www.clinique.com/media/images/foundation-finder/VF4.jpg'
+          title: 'Very Fair',
+          imgSrc: 'https://www.clinique.com/media/images/foundation-finder/VF4.jpg'
         }
       ]
     }
